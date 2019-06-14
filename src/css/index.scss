@@ -1,0 +1,196 @@
+@import "module/base.scss";
+@import "module/header.scss";
+@import "module/footer.scss";
+
+.main .banner img{
+	width: 100%;
+	height: 100%;
+}
+.main .banner{
+	width: 100%;
+	height: 192px;
+}
+.main .list{
+	width: 100%;
+	height: 118px;
+	margin: 0 auto;
+	border-bottom: 1px solid #e5e9ef;
+}
+.main .list .little_list{
+	width: 1160px;
+	height: 39px;
+	margin: 0 auto;
+	border-bottom: 1px dashed #e5e9ef;
+	display: flex;
+    align-items: center;
+}
+.main .list div:last-child{
+	border-bottom:none; 
+}
+.main .list span{
+	font-size: 12px;
+    color: #99a2aa;
+    letter-spacing: 0;
+	line-height: 39px;
+	margin-right: 60px;
+}
+.main .list .little_list  ul{
+	width: 92%;
+}
+.main .list .little_list  ul li{
+	float: left;
+	width: 140px;
+}
+.main .list .little_list .citys li{
+	width: 90px;
+}
+.main .list .little_list .citys .first{
+	width: 140px;
+}
+.main .list .little_list .citys .last{
+	width: 65px;
+	float: right;
+}
+.main .list .little_list .first a{
+	width: 140px;
+	color: #f25d8e;
+}
+.main .list .little_list ul a{
+	font-size: 12px;
+    color: #6d757a;
+    letter-spacing: 0;
+    line-height: 39px;
+}
+.main .list .little_list ul a:hover{
+    color: #f25d8e;
+}
+
+
+
+
+
+
+.main .show{
+	background: #f4f5f7;
+	overflow: hidden;
+    padding-bottom: 55px;
+}
+.main .show .show_list{
+	width: 1160px;
+	margin: 0 auto;
+}
+.main .show .show_list .list_item{
+	cursor: pointer;
+    display: flex;
+    position: relative;
+    margin-top: 60px;
+    margin-right: 40px;
+    width: 560px;
+    height: 237px;
+    background: #fff;
+    box-shadow: 0 0 15px 0 hsla(203,6%,45%,.09);
+    border-radius: 8px;
+    float: left;
+    transition: transform .2s;
+	float: left;
+}
+.main .show .show_list .list_item:hover{
+	box-shadow: 0 15px 20px 0 hsla(203,6%,45%,.4);
+}
+.main .show .show_list .list_item:nth-child(2n){
+	margin-right: 0px;
+}
+.main .show .show_list .list_item .item_img{
+	transition: transform .1s;
+    background: #fff;
+    box-shadow: 3px 3px 2px 0 hsla(203,6%,45%,.3);
+    border-radius: 8px;
+    left: 20px;
+    bottom: 24px;
+    position: absolute;
+    width: 175px;
+    height: 233px;
+}
+.main .show .show_list .list_item .item_img img{
+	border-radius: 8px;
+}
+.main .show .show_list .list_item .desc{
+	margin-left: 223px;
+}
+.main .show .show_list .list_item .desc h3{
+	overflow: hidden;
+	font-weight: normal;
+	margin-top: 30px;
+	width: 286px;
+	height: 48px;
+	font-size: 18px;
+	color: #222;
+	letter-spacing: 0;
+	line-height: 24px;
+	margin-bottom: 19px;
+}
+.main .show .show_list .list_item .desc p{
+	font-size: 14px;
+    color: #999;
+}
+.main .show .show_list .list_item .desc p:first-of-type{
+	padding-left: 20px;
+	background: url(/images/icon_date.png) no-repeat left center;
+}
+.main .show .show_list .list_item .desc p:nth-of-type(2){
+	margin-top: 10px;
+	margin-bottom: 40px;
+	padding-left: 20px;
+	background: url(/images/icon_addr.png) no-repeat left center;
+}
+.main .show .show_list .list_item .desc p:nth-of-type(2) span:first-child{
+	font-size: 14px;
+    color: #999;
+	margin-right: 10px;
+}
+.main .show .show_list .list_item .desc p:last-of-type span:first-child{
+	font-size: 18px;
+	line-height: 18px;
+	color: #f25d8e;
+}
+.main .show .show_list .list_item .desc p:last-of-type span:last-child{
+	color: #f25d8e;
+	margin-left: 4px;
+	margin-right: 5px;
+    font-size: 28px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+
+
+.main .page{
+	background: #f4f5f7;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-bottom: 40px;
+}
+.main .page img{
+	cursor: pointer;
+}
+.main .page p{
+	padding: 0 30px;
+	line-height: 15px;
+}
+.main .page span{
+	cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    color: #222;
+    letter-spacing: 0;
+    font-family: Arial-Black;
+    padding: 0 13px;
+}
+.main .page span:hover{
+	color: #f25d8e;
+}
+
+
+
+

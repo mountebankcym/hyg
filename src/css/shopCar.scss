@@ -1,0 +1,199 @@
+@import "module/base.scss";
+@import "module/header.scss";
+@import "module/footer.scss";
+
+.big_main{
+	width: 100%;
+	min-height: 447px;
+	.main{
+		width: 1160px;
+		padding: 15px 40px 40px;
+		margin: 40px auto;
+		box-sizing: border-box;
+		box-shadow: 0 0 2px 0 #cbd0d8;
+		border-radius: 4px;
+		background: #fff;
+		h2{
+			font-weight: normal;
+			font-size: 22px;
+			line-height: 52px;
+		}
+		.message{
+			height: 54px;
+			width: 1080px;
+			background-color: #f4f5f7;
+			position: relative;
+			display: flex;
+			align-items: center;
+			.all{
+				position: absolute;
+				left: 21px;
+				top: 7px;
+			}
+			span{
+				float: left;
+				height: 24px;
+				line-height: 24px;
+				font-size: 14px;
+				font-weight: 400;
+				color: #6d757a;
+			}
+			span:nth-child(1){
+				margin-left: 207px;
+			}
+			span:nth-child(2){
+				margin-left: 276px;
+			}
+			span:nth-child(3),span:nth-child(4),span:nth-child(5),span:nth-child(6),{
+				margin-left: 126px;
+			}
+		}
+		.box{
+			width: 1080px;
+			min-height: 294px;
+			.noShop{
+				width: 100%;
+				height: 83px;
+				margin-top: 90px;
+				padding-left: 446px;
+				display: none;
+				span{
+					float: left;
+					height: 83px;
+					line-height: 83px;
+					font-size: 18px;
+					margin-right: 14px;
+				}
+				a{
+					color: #fff;
+					background-image: linear-gradient(-48deg,#fe8574,#ff6a9c);
+					box-shadow: 0 3px 4px 0 #fdb8cc;
+					border-radius: 4px;
+					line-height: 29px;
+					width: 95px;
+					height: 30px;
+					margin-top: 27px;
+					float: left;
+					border-radius: 4px;
+					text-align: center;
+					font-size: 14px;
+				}
+			}
+			
+			.allShop{
+				width: 1080px;
+				list-style: none;
+				li{
+					width: 1080px;
+					height: 117px;
+					padding-left: 22px;
+					padding-top: 26px;
+					margin-top: 10px;
+					input{
+						float: left;
+						line-height: 10px;
+						margin-top: 23px;
+						margin-right: 46px;
+					}
+					img{
+						width: 99px;
+						height: 63px;
+						float: left;
+						margin-left: 90px;
+					}
+					.p1{
+						width: 238px;
+						height: 63px;
+						float: left;
+						line-height: 33px;
+						padding-left: 24px;
+						padding-right: 87px;
+						font-size: 12px;
+					}
+					
+					.price{
+						width: 122px;
+						height: 62px;
+						float: left;
+						line-height: 56px;
+					}
+					.num{
+						width: 185px;
+						height: 63px;
+						float: left;
+						a{
+							float: left;
+							width: 20px;
+							height: 20px;
+							border-radius: 2px;
+							margin-top: 19px;
+							line-height: 17px;
+							color: #6f6f6f;
+							text-align: center;
+							background-color: #eeeeee;
+						}
+						a:nth-child(2){
+							width: 56px;
+							color: black;
+							background-color:#fff;
+						}
+					}
+					.pro-allPrice{
+						width: 159px;
+						height: 63px;
+						float: left;
+						line-height: 59px;
+						color:#e2231a;
+					}
+					.doList{
+						width: 90px;
+						height: 63px;
+						font-size: 12px;
+						color: black;
+						float: left;
+						line-height: 59px;
+					}
+				}
+				
+				.rump-li{
+					padding-top: 0;
+					background-color: #f8f8f8;
+					.li-left{
+						margin-top: 26px;
+						width: 152px;
+						height: 16px;
+						float: left;	
+						.all{
+							margin-top: 7px;
+							margin-right: 0;
+						}
+						a{
+							font-size: 12px;
+							color: black;
+							line-height: 16px;
+							margin-left: 2px;
+						}
+						.allBtn{
+							margin-right: 28px;
+						}
+					}
+					.li-right{
+						width: 120px;
+						height: 100%;
+						float: right;
+						line-height: 40px;
+						p{
+							width: 120px;
+							height: 35px;
+							float: left;
+							font-size: 12px;
+							.end-allPrice{
+								color: #e2231a;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

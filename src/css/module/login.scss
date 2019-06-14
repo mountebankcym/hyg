@@ -1,0 +1,93 @@
+@import "base.scss";
+	html,body{
+		width: 100%;
+		height: 100%;
+	}
+	.modal{
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		background-color: #fff;
+		position: fixed;
+		z-index: 2;
+		display: none;
+		background: rgba($color: #000000, $alpha: 0.2);
+		.modal-content-grup{
+			border-radius: 8px;
+			background: #fff;
+			width: 420px;
+			padding: 25px 45px 40px;
+			position: absolute;
+			top: 55%;
+			left: 0;
+			right: 0;
+			margin: -200px auto auto;
+			margin: 0 auto;
+			.p1{
+				text-align: center;
+				line-height: 26px;
+				color: #00a1d6;;
+				height: 60px;
+				font-size: 26px;
+			}
+			input{
+				display: block;
+				background: #edf2f9;
+				line-height: 36px;
+				height: 36px;
+				border: 1px solid #c6d8f2;
+				transitoin: all .2s ease;
+				padding: 0 15px;
+				width: 298px;
+				margin:0 auto 20px;outline: none;
+			}
+			button{
+				background: #0094c5;
+				border-radius: 4px;
+				width: 298px;
+				cursor: pointer;
+				line-height: 38px;
+				height: 38px;
+				text-align: center;
+				transition: background .2s ease;
+				color: #fff;
+				box-sizing: border-box;
+				margin: 15px;
+				border: none;
+			}
+			button:hover {
+				background: #00b5e5;
+			}
+			} 
+		}
+.c{
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+	width: 420px;
+	padding: 25px 45px 40px;
+	position: absolute;
+	top: 30%;
+	left: 0;
+	right: 0;
+	margin: -200px auto auto;
+	margin: 0 auto;
+	.login-off{
+		background-position: -32px -2px;
+		border-radius: 3px;
+		cursor: pointer;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		width: 25px;
+		height: 25px;
+		background: #fff;
+		color: #222;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.login-off:hover{
+		background: #c6d8f2;
+	}
+}

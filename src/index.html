@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="UTF-8">
+		<title>bilibili会员购</title>
+
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+		<div id="header-content">
+
+		</div>
+
+		<div class="main">
+			<div class="banner">
+				<img src="/images/banner1.jpeg">
+			</div>
+
+			<div class="list">
+				<div class="little_list">
+					<span>城市:</span>
+					<ul class="citys">
+						<li class="first"><a href="javascript:;">全国</a></li>
+						<li><a href="javascript:;">上海</a></li>
+						<li><a href="javascript:;">北京</a></li>
+						<li><a href="javascript:;">成都</a></li>
+						<li><a href="javascript:;">杭州</a></li>
+						<li><a href="javascript:;">深圳</a></li>
+						<li><a href="javascript:;">广州</a></li>
+						<li><a href="javascript:;">武汉</a></li>
+						<li><a href="javascript:;">南京</a></li>
+						<li><a href="javascript:;">天津</a></li>
+						<li class="last"><a href="">全部城市</a><span>&nbsp;∨</span></li>
+					</ul>
+				</div>
+				<div class="little_list">
+					<span>类型:</span>
+					<ul class="types">
+						<li class="first"><a href="javascript:;">全部类型</a></li>
+						<li><a href="javascript:;">展览（753）</a></li>
+						<li><a href="javascript:;">演出（273）</a></li>
+						<li><a href="javascript:;">本地生活（109）</a></li>
+					</ul>
+				</div>
+				<div class="little_list">
+					<span>筛选:</span>
+					<ul class="order">
+						<li class="first"><a href="javascript:;">全部时间</a></li>
+						<li><a href="javascript:;">本周</a></li>
+						<li><a href="javascript:;">本月</a></li>
+						<li><a href="javascript:;">中秋节假期</a></li>
+
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="show">
+				<div class="show_list" id="list_con"></div>
+				<script type="text/html" id="list-template">
+					{{each list shop}}
+					<a href="/html/details.html?id={{shop.id}}" class="list_item">
+						<div class="item_img"><img src="{{shop.image}}" ></div>
+						<div class="desc">
+							<h3>{{shop.title}}</h3>
+							<p>{{shop.date}}</p>
+							<p><span>{{shop.addr}}</span><span>{{shop.addr_l}}</span></p>
+							<p><span>¥</span><span>{{shop.price}}</span>起</p>
+						</div>
+					</a>
+					{{/each}}
+				</script>
+			</div>
+
+			<div class="page">
+				<img src="/images/icon_left.png" alt="">
+				<p><span>1</span><span>2</span><span>3</span><span>4</span><span>...</span><span>63</span></p>
+				<img src="/images/icon_right.png" alt="">
+			</div>
+		</div>
+
+		<div id="footer-content">
+
+		</div>
+
+		<script src="/libs/require.min.js" type="text/javascript" data-main="/js/index"></script>
+	</body>
+</html>

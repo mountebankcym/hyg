@@ -1,0 +1,86 @@
+@import "module/base.scss";
+.header{
+	height: 42px;
+	width: 100%;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+	
+	.header_wrap{
+		margin: 0 auto;
+		width: 1160px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		height: 42px;
+		
+		a img{
+			height: 27px;
+			width: 130px;
+			margin-right: 40px;
+			cursor: pointer;
+		}
+		
+		p{
+			width: 436px;
+			color: #222;
+			font-size: 12px;
+			display: flex;
+			
+			span{
+				padding: 0 7px;
+				cursor: pointer;
+			}
+		}
+	}
+	
+	
+}
+
+.modal-content-grup{
+			background: #fff;
+			width: 420px;
+			padding: 25px 45px 40px;
+			position: absolute;
+			border-radius: 8px;
+			top: 25%;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			.p1{
+				text-align: center;
+				line-height: 26px;
+				color: #00a1d6;;
+				height: 60px;
+				font-size: 26px;
+			}
+			input{
+				display: block;
+				background: #edf2f9;
+				line-height: 36px;
+				height: 36px;
+				border: 1px solid #c6d8f2;
+				transitoin: all .2s ease;
+				padding: 0 15px;
+				width: 298px;
+				margin:0 auto 20px;outline: none;
+			}
+			button{
+				background: #0094c5;
+				border-radius: 4px;
+				width: 298px;
+				cursor: pointer;
+				line-height: 38px;
+				height: 38px;
+				text-align: center;
+				transition: background .2s ease;
+				color: #fff;
+				box-sizing: border-box;
+				margin: 15px;
+				border: none;
+			}
+			button:hover {
+				background: #00b5e5;
+			}
+		} 
+
+
+

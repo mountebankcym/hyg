@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>bilibili会员购</title>
+		<link rel="stylesheet" href="/css/details.css">
+	</head>
+	<body>
+		<div id="header-content">
+		
+		</div>
+		
+		<div class="main" id="detail"></div>
+		<script type="text/html" id="detail-template">
+			<div class="m_top">
+				<p><a href="">Bilibili</a>><a href="">会员购</a>><span>{{data.title}}</span></p>
+			</div>
+			<div class="m_ticket">
+				
+				
+				
+				<div class="view_thumbs" id="gal1">
+					<div class="view_bd">
+						<img class="zoom-img" src="{{data.image[0]}}" data-zoom-image="{{data.image[0]}}" />
+					</div>
+				
+					<ul class="view-ul">
+						<li class="current">
+							<a href="#" data-image="{{data.image[0]}}" data-zoom-image="{{data.image[0]}}">
+								<img class="s" id="img" src="{{data.image[0]}}" />
+							</a>
+						</li>
+						<li>
+							<a href="#" data-image="{{data.image[1]}}" data-zoom-image="{{data.image[1]}}">
+								<img class="s" src="{{data.image[1]}}" /></a>
+						</li>
+						<li>
+							<a href="#" data-image="{{data.image[2]}}" data-zoom-image="{{data.image[2]}}">
+								<img class="s" src="{{data.image[2]}}" /></a>
+						</li>
+						<li>
+							<a href="#" data-image="{{data.image[3]}}" data-zoom-image="{{data.image[3]}}">
+								<img class="s" src="{{data.image[3]}}" /></a>
+						</li>
+						<li>
+							<a href="#" data-image="{{data.image[4]}}" data-zoom-image="{{data.image[4]}}">
+								<img class="s" src="{{data.image[4]}}" /></a>
+						</li>
+					</ul>
+				</div>
+				<div class="ticket_r">
+					<h3>{{data.title}}</h3>
+					<div class="ticket_r_top">
+						<p><span>时间：</span>{{data.date}}</p>
+						<p><span>场馆：</span>{{data.addr_l}}<a href="">查看地图</a></p>
+					</div>
+					<div class="ticket_r_bottom">
+						<div>
+							<span>场次：</span>
+							<input type="button" value="{{data.time[0]}}" />
+							<input type="button" value="{{data.time[1]}}" />
+							<input type="button" value="{{data.time[2]}}" />
+							<input type="button" value="{{data.time[3]}}" />
+							<input type="button" value="{{data.time[4]}}" />
+						</div>
+						<div>
+							<span>价格：</span>
+							<input type="button"  value="¥{{data.price[0]}}(预售票)" />
+							<input type="button"  value="¥{{data.price[1]}}(预售VIP票)" />
+							<input type="button"  value="¥{{data.price[2]}}(现场票)" />
+						</div>
+						<div>
+							<span>数量：</span>
+							<div class="amount">
+								<div id="sub-num"><img src="/images/icon_sub.png" ></div>
+								<div id="num" class="count_num">1</div>
+								<div id="add-num"><img src="/images/icon_add.png" ></div>
+							</div>
+							<div class="sum">¥&nbsp;<span class="price">{{data.price[0]}}</span></div>
+						</div>
+						<a href="/html/shopCar.html" class="addshopCar">加入订单</a>
+					</div>
+				</div>
+			</div>
+		</script>
+		
+		
+		
+		<div id="footer-content">
+		
+		</div>
+		<script src="/libs/require.min.js" type="text/javascript" data-main="/js/details"></script>
+	</body>
+</html>
