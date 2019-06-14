@@ -10,6 +10,31 @@
 	width: 100%;
 	height: 192px;
 }
+.main .banner .swiper-wrapper{
+	width: 100%;
+	height: 192px;
+	.swiper-slide{
+		img{
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+.main .banner .swiper-pagination{
+	.swiper-pagination-bullet{
+		width: 24px;
+		height: 5px;
+		background: #fff;
+		opacity: 1;
+	}
+	.swiper-pagination-bullet-active{
+		background: #f25d8e;
+	}
+}
+.swiper-button-next, .swiper-button-prev{
+	color: #f25d8e;
+}
+
 .main .list{
 	width: 100%;
 	height: 118px;
